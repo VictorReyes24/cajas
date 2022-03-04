@@ -4,41 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header class="navbar">
         <nav>
             <div>
-                <img src="" alt="">
+                <a href="https://www.schoology.com" target="blank">
+                    <img class="logo" src="img/logo.png" alt="SchoologyLogo">
+                </a>
             </div>
         </nav>
     </header>
-    <main>
+    <main class="main-page">
         <section>
+            <div class="title-form">
+                <span>Sing up for Schoology</span>
+                <a href="https://app.schoology.com/register.php" target="blank">Back</a>
+            </div>
+
+            <div class="Acceso">
+                <input type="text" maxlength="128" name="code" id="edit-code" size="55" value="" placeholder="Access Code" aria-label="Access Code" class="form-text">
+            </div>
+            
             <div>
-                <div>
-                    <span>Sing up for Schoology</span>
-                </div>
-                <div>
-                    <span>Sign</span>
-                </div>
+                <span class="texto">Enter the access code provided by your instructor</span>
             </div>
             <div>
-                <input type="text">
-            </div>
-            <div>
-                <span>Enter the access code provided by your instructor</span>
-            </div>
-            <div>
-                <button>Continue</button>
+                <input type="submit" value="Continue">
             </div>
         </section>
     </main>
-    <footer>
-        <span>Schoology © 2022 · </span>
-        <label for="">PRIVACY POLICY · </label>
-        <label for="">Terms of Use · Help Cente</label>
-    </footer>
+    <footer id="page-footer">
+        <div class="container">
+          <div id="copyright-and-links">
+            Schoology ©
+            2022        <span class="divider">·</span>
+              <a id="footer-nav-privacy" class="privacy-footer" href="https://www.powerschool.com/privacy" target="_blank">Privacy Policy</a>
+              <span class="divider">·</span>
+              <a id="footer-nav-privacy" href="https://www.schoology.com/terms-of-use" target="_blank">Terms of Use</a>
+            <span class="divider">·</span>
+            <a id="footer-nav-help-center" href="https://support.schoology.com/hc/en-us" rel="external" target="_blank">Help Center</a>
+          </div>
+          <div id="trust" style="display:none">
+            <a href="https://www.schoology.com/privacy" target="_blank" id="privacy-link">
+              <img alt="Privo Privacy Certified" src="https://privo.com/images/certLogos/H_PPC_B.png">
+            </a>
+            <script type="text/javascript">
+              (function () {
+                var lang = document.documentElement.lang;
+                var link = 'https://www.schoology.com/privacy';
+                if (lang === 'es') {
+                  link += '/es';
+                }
+      
+                var privacyLink = document.getElementById('privacy-link');
+                privacyLink.href = link;
+              })();
+            </script>
+          </div>
+        </div>
+      </footer>
 </body>
 </html>
+
